@@ -6,68 +6,159 @@
         align-items: center;
         justify-content: right;
         position: relative;
-        .welcome-text {
-            position: absolute;
-            left: 0;
-            max-width: 598px;
-            left: 20px;
+
+
+    }
+}
+
+.welcome-img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 0;
+    height: max-content;
+}
+
+.blured-monna {
+    width: 1000px;
+}
+
+.courousel-slider {
+    margin-top: -50px;
+    width: 600px;
+}
+
+.monna {
+    display: none;
+}
+
+.welcome-text {
+    position: absolute;
+    left: 0;
+    max-width: 598px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    h1 {
+        @include Font-forum;
+        font-size: 80px;
+        line-height: 90px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    span {
+        @include Font-roboto28;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: 2px;
+        color: #fff;
+        margin-top: 25px;
+    }
+
+    a {
+        div {
+            @include Font-roboto22;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.05em;
+            background-color: $Dark-red;
+            color: #fff;
+            margin-top: 75px;
+            border-radius: 5px;
+            width: 360px;
+            height: 75px;
             display: flex;
-            flex-direction: column;
-            z-index: 1;
+            align-items: center;
+            justify-content: center;
 
-            h1 {
-                @include Font-forum;
-                font-size: 80px;
-                line-height: 90px;
-                color: #fff;
-                text-transform: uppercase;
+            &:hover {
+                transition: 0.3s;
+                background-color: $Font-gold;
             }
-
-            span {
-                @include Font-roboto28;
-                font-weight: 300;
-                font-size: 28px;
-                line-height: 33px;
-                letter-spacing: 2px;
-                color: #fff;
-                margin-top: 25px;
-            }
-
-            a {
-                div {
-                    @include Font-roboto22;
-                    font-size: 24px;
-                    line-height: 28px;
-                    letter-spacing: 0.05em;
-                    background-color: $Dark-red;
-                    color: #fff;
-                    margin-top: 75px;
-                    border-radius: 5px;
-                    width: 360px;
-                    height: 75px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    &:hover{
-                        transition: 0.3s;
-                        background-color: $Font-gold;
-                    }
-                }
-            }
-        }
-    .welcome-img{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        z-index: 0;
-        height: max-content;
-        .blured-monna{
-            width: 1000px;
-        }
-        .courousel-slider{
-            margin-top: -50px;
-            width: 600px;
         }
     }
+}
+
+@media (max-width: 1024px) {
+    .welcome-text {
+        h1 {
+            font-size: 50px;
+        }
+
+        span {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        a {
+            div {
+                font-size: 20px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome .container {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .welcome-text {
+        position: relative;
+
+        h1 {
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+        span {
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+        }
+
+        a {
+            display: none;
+        }
+    }
+
+    .blured-monna {
+        display: none;
+    }
+
+    .monna {
+        display: flex;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .courousel-slider {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .welcome-text {
+        position: relative;
+
+        h1 {
+            font-size: 28px;
+            line-height: 40px;
+        }
+
+        span {
+            font-size: 16px;
+            line-height: 19px;
+        }
     }
 }

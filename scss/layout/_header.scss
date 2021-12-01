@@ -8,22 +8,6 @@ header {
     flex-direction: row;
     padding: 60px 20px;
 
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 0 25px;
-
-        span {
-            @include Font-forum;
-            font-size: 28px;
-            line-height: 31px;
-            /* identical to box height */
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            color: #fff;
-        }
-    }
-
     ul {
         list-style: none;
         display: flex;
@@ -55,7 +39,24 @@ header {
 
 }
 
-@media screen and (max-width: 1024px) {
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
+
+    span {
+        @include Font-forum;
+        font-size: 28px;
+        line-height: 31px;
+        /* identical to box height */
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+
+@media (max-width: 1024px) {
     .headElement {
         ul {
             display: none;
@@ -68,7 +69,7 @@ header {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .logo {
         span {
             line-height: 50px;
@@ -76,7 +77,7 @@ header {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media (max-width: 420px) {
     .logo {    
     span {
             font-size: 16px;
