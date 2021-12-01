@@ -127,7 +127,23 @@ header {
   background-color: #030303;
 }
 
+.welcome .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  position: relative;
+}
+
 .welcome .container .welcome-text {
+  position: absolute;
+  left: 0;
+  max-width: 598px;
   left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,7 +152,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 150px;
+  z-index: 1;
 }
 
 .welcome .container .welcome-text h1 {
@@ -165,6 +181,7 @@ header {
   line-height: 33px;
   letter-spacing: 2px;
   color: #fff;
+  margin-top: 25px;
 }
 
 .welcome .container .welcome-text a div {
@@ -180,6 +197,50 @@ header {
   letter-spacing: 0.05em;
   background-color: #710707;
   color: #fff;
-  text-align: center;
+  margin-top: 75px;
+  border-radius: 5px;
+  width: 360px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.welcome .container .welcome-text a div:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #9d8665;
+}
+
+.welcome .container .welcome-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.welcome .container .welcome-img .blured-monna {
+  width: 1000px;
+}
+
+.welcome .container .welcome-img .courousel-slider {
+  margin-top: -50px;
+  width: 600px;
 }
 /*# sourceMappingURL=style.css.map */
