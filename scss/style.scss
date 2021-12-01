@@ -1,0 +1,15 @@
+@import 'variables/variables';
+@import 'variables/mixins';
+
+@import 'base/base-elements';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'sections/welcome';
+@import 'sections/virtual-tour';
+@import 'sections/picture-explore';
+@import 'sections/video-journey';
+@import 'sections/art-gallery';
+@import 'sections/buy-tickets';
+@import 'sections/contacts';

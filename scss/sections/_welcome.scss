@@ -1,0 +1,50 @@
+header {
+    background-color: $Bg-dark;
+}
+
+.headElement {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 60px 0;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0 25px;
+
+        span {
+            @include Font-forum;
+            font-size: 28px;
+            line-height: 31px;
+            /* identical to box height */
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0 55px;
+
+        li {
+            a {
+                @include Font-roboto22;
+                font-weight: 200;
+                letter-spacing: 2px;
+                text-decoration: none;
+                color: #fff;
+
+                &:hover {
+                    transition: 0.3s;
+                    color: $Font-gold;
+                }
+            }
+        }
+    }
+
+}

@@ -1,1 +1,84 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.container {
+  max-width: 1480px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #030303;
+}
+
+.headElement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 60px 0;
+}
+
+.headElement .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 25px;
+}
+
+.headElement .logo span {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 88px;
+  letter-spacing: 0.05em;
+  font-size: 28px;
+  line-height: 31px;
+  /* identical to box height */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.headElement ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0 55px;
+}
+
+.headElement ul li a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.headElement ul li a:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #9d8665;
+}
+/*# sourceMappingURL=style.css.map */
