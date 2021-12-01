@@ -1,50 +1,41 @@
-header {
+.welcome {
     background-color: $Bg-dark;
-}
+    .container {        
+        .welcome-text {
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 150px;
 
-.headElement {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 60px 0;
-
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 0 25px;
-
-        span {
-            @include Font-forum;
-            font-size: 28px;
-            line-height: 31px;
-            /* identical to box height */
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            color: #fff;
-        }
-    }
-
-    ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        gap: 0 55px;
-
-        li {
-            a {
-                @include Font-roboto22;
-                font-weight: 200;
-                letter-spacing: 2px;
-                text-decoration: none;
+            h1 {
+                @include Font-forum;
+                font-size: 80px;
+                line-height: 90px;
                 color: #fff;
+                text-transform: uppercase;
+            }
 
-                &:hover {
-                    transition: 0.3s;
-                    color: $Font-gold;
+            span {
+                @include Font-roboto28;
+                font-weight: 300;
+                font-size: 28px;
+                line-height: 33px;
+                letter-spacing: 2px;
+                color: #fff;
+            }
+
+            a {
+                div {
+                    @include Font-roboto22;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: 0.05em;
+                    background-color: $Dark-red;
+                    color: #fff;
+                    text-align: center;
+
                 }
             }
         }
     }
-
 }

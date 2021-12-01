@@ -1,0 +1,86 @@
+header {
+    background-color: $Bg-dark;
+}
+
+.headElement {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 60px 20px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0 25px;
+
+        span {
+            @include Font-forum;
+            font-size: 28px;
+            line-height: 31px;
+            /* identical to box height */
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 0 55px;
+        padding-left: 0;
+        margin: 0 auto;
+
+        li {
+            a {
+                @include Font-roboto22;
+                font-weight: 200;
+                letter-spacing: 2px;
+                text-decoration: none;
+                color: #fff;
+
+                &:hover {
+                    transition: 0.3s;
+                    color: $Font-gold;
+                }
+            }
+        }
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .headElement {
+        ul {
+            display: none;
+        }
+
+        .burger-menu {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        span {
+            line-height: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .logo {    
+    span {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}

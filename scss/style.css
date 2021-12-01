@@ -1,6 +1,14 @@
 .container {
-  max-width: 1480px;
+  max-width: 1440px;
   padding: 0 20px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
   margin: 0 auto;
 }
 
@@ -19,7 +27,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 
 .headElement .logo {
@@ -60,6 +68,8 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 0 55px;
+  padding-left: 0;
+  margin: 0 auto;
 }
 
 .headElement ul li a {
@@ -80,5 +90,96 @@ header {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #9d8665;
+}
+
+.headElement .burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .headElement ul {
+    display: none;
+  }
+  .headElement .burger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo span {
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo span {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.welcome {
+  background-color: #030303;
+}
+
+.welcome .container .welcome-text {
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 150px;
+}
+
+.welcome .container .welcome-text h1 {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 88px;
+  letter-spacing: 0.05em;
+  font-size: 80px;
+  line-height: 90px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.welcome .container .welcome-text span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.welcome .container .welcome-text a div {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  background-color: #710707;
+  color: #fff;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
