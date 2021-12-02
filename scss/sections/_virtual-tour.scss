@@ -1,0 +1,177 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px 0;
+    margin: 75px auto;
+}
+
+.virtual-tour {
+    .container {
+        margin: 75px auto;
+    }
+
+    hr {
+        @include hr-rule-set;
+    }
+
+    h1 {
+        @include Font-forum;
+        color: $Font-gold;
+        font-size: 80px;
+        line-height: 90px;
+        letter-spacing: 5px;
+    }
+
+    h4 {
+        margin-top: 25px;
+        @include Font-forum;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 5px;
+    }
+}
+
+.main-text {
+    @include Font-roboto22;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.virtual-text {
+    @include Font-roboto18;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.card {
+    display: block;
+    max-width: 440px;
+
+    hr {
+        margin: 10px auto;
+        display: inline-block;
+        height: 2px;
+        width: 300px;
+    }
+
+    span {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cards-container {
+        justify-content: space-around;
+    }
+
+    .virtual-tour {
+        h1 {
+            font-size: 50px;
+            line-height: 75px;
+        }
+    }
+
+    .card {
+        h4 {
+            font-size: 28px;
+            line-height: 31px;
+            letter-spacing: 3px;
+        }
+
+        img {
+            width: 330px;
+            height: auto;
+        }
+
+        hr {
+            width: 150px;
+        }
+    }
+
+    .main-text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .virtual-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .virtual-tour {
+        h1 {
+            font-size: 40px;
+            line-height: 60px;
+        }
+    }
+
+    .card {
+        h4 {
+            font-size: 22px;
+            line-height: 24px;
+            letter-spacing: 3px;
+        }
+
+        img {
+            width: 280px;
+            height: auto;
+        }
+
+        hr {
+            width: 150px;
+        }
+    }
+
+    .main-text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .virtual-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .virtual-tour {
+        h1 {
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+
+    .card {
+        h4 {
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 5px;
+        }
+
+        img {
+            width: 280px;
+            height: auto;
+        }
+
+        hr {
+            width: 150px;
+        }
+    }
+
+    .main-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .virtual-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}

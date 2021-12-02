@@ -2,9 +2,8 @@
     font-family: Forum;
     font-style: normal;
     font-weight: normal;
-    font-size: 80px;
-    line-height: 88px;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 @mixin Font-roboto32 {
@@ -43,6 +42,10 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    /* identical to box height */
     letter-spacing: 0.05em;
+}
+
+@mixin hr-rule-set {
+    height: 3px;
+    background-color: $Dark-red;    
 }

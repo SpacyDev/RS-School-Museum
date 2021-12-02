@@ -48,9 +48,7 @@ header {
         @include Font-forum;
         font-size: 28px;
         line-height: 31px;
-        /* identical to box height */
         letter-spacing: 5px;
-        text-transform: uppercase;
         color: #fff;
     }
 }
@@ -78,8 +76,13 @@ header {
 }
 
 @media (max-width: 420px) {
-    .logo {    
-    span {
+    .logo {
+        img {
+            max-width: 29px;
+            height: auto;
+        }
+
+        span {
             font-size: 16px;
             line-height: 18px;
         }
