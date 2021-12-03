@@ -47,5 +47,6 @@
 
 @mixin hr-rule-set {
     height: 3px;
-    background-color: $Dark-red;    
+    background-color: $Dark-red;  
+    border: none;  
 }

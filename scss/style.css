@@ -336,6 +336,7 @@ header {
 .virtual-tour hr {
   height: 3px;
   background-color: #710707;
+  border: none;
 }
 
 .virtual-tour h1 {
@@ -485,6 +486,128 @@ header {
   .virtual-text {
     font-size: 16px;
     line-height: 19px;
+  }
+}
+
+.picture-explore {
+  padding: 75px 0;
+  background-color: #030303;
+}
+
+.picture-explore img {
+  max-width: 720px;
+  height: auto;
+}
+
+.picture-explore .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.picture-explore h1 {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.picture-explore hr {
+  height: 3px;
+  background-color: #710707;
+  border: none;
+  height: 3px;
+  display: block;
+  margin: 25px 0 75px 0;
+}
+
+.picture-explore-container {
+  display: inline-block;
+  max-width: 660px;
+  margin-right: 10px;
+}
+
+.picture-explore-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  line-height: 38px;
+  display: block;
+  color: #fff;
+  gap: 25px 0;
+}
+
+.picture-explore-text span {
+  color: #9d8665;
+}
+
+@media (max-width: 1090px) {
+  .picture-explore hr {
+    margin: 20px 0 62px 0;
+  }
+  .picture-explore .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .picture-explore-container {
+    display: block;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .pictEx {
+    display: none;
+  }
+  .picture-explore-text {
+    font-size: 20px;
+    line-height: 38px;
+    gap: 0;
+  }
+  .picture-explore h1 {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  .picture-explore img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .picture-explore hr {
+    margin: 20px 0 40px 0;
+  }
+  .picture-explore img {
+    margin: 0;
+  }
+  .picture-explore-text {
+    display: none;
+  }
+  .picture-explore h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 420px) {
+  .picture-explore h1 {
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,122 @@
+.picture-explore {
+    padding: 75px 0;
+
+    img {
+        max-width: 720px;
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    background-color: $Bg-dark;
+
+    h1 {
+        @include Font-forum;
+        color: #fff;
+        display: block;
+        font-size: 80px;
+        line-height: 90px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    hr {
+        @include hr-rule-set;
+        height: 3px;
+        display: block;
+        margin: 25px 0 75px 0;
+    }
+}
+
+.picture-explore-container {
+    display: inline-block;
+    max-width: 660px;
+    margin-right: 10px;
+}
+
+.picture-explore-text {
+    @include Font-roboto22;
+    font-weight: 300;
+    line-height: 38px;
+    display: block;
+    color: #fff;
+    gap: 25px 0;
+
+    span {
+        color: $Font-gold
+    }
+}
+
+@media (max-width: 1090px) {
+    .picture-explore {
+        hr {
+            margin: 20px 0 62px 0;
+        }
+
+        .container {
+            flex-direction: column;
+        }
+    }
+
+    .picture-explore-container {
+        display: block;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .pictEx {
+        display: none;
+    }
+
+    .picture-explore-text {
+        font-size: 20px;
+        line-height: 38px;
+        gap: 0;
+    }
+
+    .picture-explore {
+        h1 {
+            font-size: 50px;
+            line-height: 75px;
+        }
+        img{
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .picture-explore {
+
+        hr {
+            margin: 20px 0 40px 0;
+        }
+        img{
+            margin: 0;
+        }
+    }
+
+    .picture-explore-text {
+        display: none;
+    }
+
+    .picture-explore {
+        h1 {
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+    }
+}
+
+@media (max-width: 420px) {
+    .picture-explore {
+        h1 {
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+}
