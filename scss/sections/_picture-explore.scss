@@ -19,30 +19,32 @@
 
     hr {
         @include hr-rule-set;
-        height: 3px;
         margin: 25px 0 75px 0;
     }
 }
 
 .picture-explore-container {
-    max-width: 660px;
-    margin-right: 10px;
+    max-width: 660px
+}
+.picture-explore-image{
+    img{
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .picture-explore-text {
     @include Font-roboto22;
     font-weight: 300;
     line-height: 38px;
-    display: block;
     color: #fff;
-    gap: 25px 0;
 
     span {
         color: $Font-gold
     }
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1024px) {
     .picture-explore {
         hr {
             margin: 20px 0 62px 0;
@@ -57,6 +59,9 @@
         display: block;
         max-width: 100%;
         margin-right: 0;
+    }
+    .picture-explore-image{
+        text-align: center;
     }
 
     .pictEx {
@@ -88,6 +93,7 @@
         }
         img{
             margin: 0;
+            height: auto;
         }
     }
 

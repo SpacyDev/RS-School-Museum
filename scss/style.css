@@ -1,5 +1,5 @@
 .container {
-  max-width: 1440px;
+  max-width: 1480px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -48,13 +48,11 @@ header {
 }
 
 .headElement ul li a {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
-  line-height: 26px;
   /* identical to box height */
-  letter-spacing: 0.05em;
   font-weight: 200;
   letter-spacing: 2px;
   text-decoration: none;
@@ -197,13 +195,11 @@ header {
 }
 
 .welcome-text span {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
-  line-height: 33px;
   /* identical to box height */
-  letter-spacing: 0.05em;
   font-weight: 300;
   font-size: 28px;
   line-height: 33px;
@@ -213,13 +209,11 @@ header {
 }
 
 .welcome-text a div {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
-  line-height: 26px;
   /* identical to box height */
-  letter-spacing: 0.05em;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.05em;
@@ -365,25 +359,21 @@ header {
 }
 
 .main-text {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
-  line-height: 26px;
   /* identical to box height */
-  letter-spacing: 0.05em;
   font-weight: 200;
   font-size: 22px;
   line-height: 26px;
 }
 
 .virtual-text {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.05em;
   font-weight: 200;
   font-size: 18px;
   line-height: 21px;
@@ -521,35 +511,34 @@ header {
   height: 3px;
   background-color: #710707;
   border: none;
-  height: 3px;
   margin: 25px 0 75px 0;
 }
 
 .picture-explore-container {
   max-width: 660px;
-  margin-right: 10px;
+}
+
+.picture-explore-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 .picture-explore-text {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
-  line-height: 26px;
   /* identical to box height */
-  letter-spacing: 0.05em;
   font-weight: 300;
   line-height: 38px;
-  display: block;
   color: #fff;
-  gap: 25px 0;
 }
 
 .picture-explore-text span {
   color: #9d8665;
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1024px) {
   .picture-explore hr {
     margin: 20px 0 62px 0;
   }
@@ -563,6 +552,9 @@ header {
     display: block;
     max-width: 100%;
     margin-right: 0;
+  }
+  .picture-explore-image {
+    text-align: center;
   }
   .pictEx {
     display: none;
@@ -587,6 +579,7 @@ header {
   }
   .picture-explore img {
     margin: 0;
+    height: auto;
   }
   .picture-explore-text {
     display: none;
@@ -644,13 +637,11 @@ header {
 }
 
 .video-journey-text span {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
-  line-height: 26px;
   /* identical to box height */
-  letter-spacing: 0.05em;
   font-size: 22px;
   line-height: 38px;
   max-width: 50%;
