@@ -1,0 +1,224 @@
+.buy-tickets {
+    .container {
+        margin: 75px auto;
+    }
+
+    .buy-menu {
+        display: flex;
+    }
+
+    hr {
+        margin: 25px 0 75px 0;
+        @include hr-rule-set
+    }
+
+    h2 {
+        @include Font-forum;
+        font-size: 80px;
+        line-height: 90px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $Font-gold;
+    }
+}
+
+.buy-tickets-image {
+    img {
+        width: 720px;
+        height: auto;
+    }
+}
+
+.buy-options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 60px;
+}
+
+.checkbox {
+    h5 {
+        
+        @include Font-roboto28;
+        line-height: 33px;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+
+    span {
+        @include Font-roboto22;
+        display: inline-block;
+        margin-bottom: 25px;
+        line-height: 26px;
+        font-weight: 300;
+    }
+
+    input {
+        margin-right: 23px;
+    }
+}
+
+.amount {
+    position: relative;
+
+    h5 {
+        text-align: right;
+        margin-bottom: 15px;
+        @include Font-roboto28;
+        line-height: 33px;
+        font-weight: bold;
+    }
+
+    img {
+        margin-top: 15px;
+        width: 100%;
+        height: auto;
+    }
+
+    span {
+        display: inline-block;
+        margin-top: 10px;
+        @include Font-roboto22;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: 1.65px;
+        font-weight: 300;
+    }
+
+    p {
+        margin: 50px auto 60px auto;
+        @include Font-roboto28;
+        font-weight: bold;
+        line-height: 33px;
+        letter-spacing: 1.65px;
+    }
+}
+
+.buy-now-button {
+    position: absolute;
+    right: 0;
+    width: 175px;
+    height: 50px;
+    color: #fff;
+    background-color: $Bg-dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include Font-roboto22;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 2px;
+
+    &:hover {
+        background-color: $Font-gold;
+        transition: 0.3S;
+    }
+
+}
+
+@media(max-width: 1024px) {
+    .buy-tickets {
+        h2 {
+            font-size: 50px;
+            line-height: 75px;
+        }
+    }
+
+    .checkbox {
+        display: none;
+    }
+
+    .buy-options {
+        margin: 0;
+    }
+
+    .amount {
+        margin: 0 auto;
+        h5{
+            text-align: left;
+        }
+        p {
+            margin: 25px auto 69px auto;
+        }
+
+        span {
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+
+    .buy-now-button {
+        width: 150px;
+    }
+
+    .buy-tickets-image {
+        img {
+            width: auto;
+            max-height: 440px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .buy-tickets-image {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .buy-tickets {
+        h2 {
+            font-size: 40px;
+            line-height: 60px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .buy-menu {
+        flex-direction: column;
+    }
+
+    .buy-tickets-image {
+
+        img {
+            width: 100%;
+            max-height: 160px;
+        }
+    }
+
+    .amount {
+        h5 {
+            text-align: center;
+            font-size: 16px;
+            line-height: 19px;
+            margin: 40px auto 20px auto;
+        }
+
+        span {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 19px;
+            margin: 40px auto;
+            text-align: center;
+        }
+    }
+
+    .buy-tickets {
+        h2 {
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+}
+
+.buy-now-button {
+    font-size: 16px;
+    line-height: 0px;
+}

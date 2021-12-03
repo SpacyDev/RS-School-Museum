@@ -1,0 +1,78 @@
+.art-gallery {
+    background-color: $Bg-dark;
+}
+
+.gallery-title {
+    padding: 75px 0;
+
+    h2 {
+        @include Font-forum;
+        font-size: 80px;
+        line-height: 90px;
+        letter-spacing: 5px;
+        color: #fff;
+    }
+}
+
+.gallery {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 0 36px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0;
+}
+
+.gallery-gradient {
+    position: absolute;
+    height: 360px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .gallery-title {
+        h2 {
+            font-size: 50px;
+            line-height: 75px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hidden-column {
+        display: none;
+    }
+
+    .gallery-title {
+        h2 {
+            font-size: 40px;
+            line-height: 60px;
+        }
+    }
+
+    .gallery {
+        gap: 0 24px;
+    }
+}
+
+@media (max-width: 420px) {
+    .gallery-title {
+        h2 {
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+}

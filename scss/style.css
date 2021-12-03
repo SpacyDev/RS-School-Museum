@@ -83,7 +83,6 @@ header {
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   font-size: 28px;
   line-height: 31px;
@@ -187,7 +186,6 @@ header {
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   font-size: 80px;
   line-height: 90px;
@@ -337,7 +335,6 @@ header {
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #9d8665;
   font-size: 80px;
@@ -350,7 +347,6 @@ header {
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   font-size: 32px;
   line-height: 35px;
@@ -498,7 +494,6 @@ header {
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
   font-size: 80px;
@@ -519,7 +514,7 @@ header {
 }
 
 .picture-explore-image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -626,7 +621,6 @@ header {
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   font-size: 80px;
   line-height: 90px;
@@ -710,5 +704,329 @@ header {
     font-size: 28px;
     line-height: 40px;
   }
+}
+
+.art-gallery {
+  background-color: #030303;
+}
+
+.gallery-title {
+  padding: 75px 0;
+}
+
+.gallery-title h2 {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+.gallery {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 36px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px 0;
+}
+
+.gallery-gradient {
+  position: absolute;
+  height: 360px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .gallery-title h2 {
+    font-size: 50px;
+    line-height: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden-column {
+    display: none;
+  }
+  .gallery-title h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .gallery {
+    gap: 0 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gallery-title h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.buy-tickets .container {
+  margin: 75px auto;
+}
+
+.buy-tickets .buy-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.buy-tickets hr {
+  margin: 25px 0 75px 0;
+  height: 3px;
+  background-color: #710707;
+  border: none;
+}
+
+.buy-tickets h2 {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9d8665;
+}
+
+.buy-tickets-image img {
+  width: 720px;
+  height: auto;
+}
+
+.buy-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-left: 60px;
+}
+
+.checkbox h5 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  /* identical to box height */
+  line-height: 33px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.checkbox span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  /* identical to box height */
+  display: inline-block;
+  margin-bottom: 25px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+.checkbox input {
+  margin-right: 23px;
+}
+
+.amount {
+  position: relative;
+}
+
+.amount h5 {
+  text-align: right;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  /* identical to box height */
+  line-height: 33px;
+  font-weight: bold;
+}
+
+.amount img {
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.amount span {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  /* identical to box height */
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 1.65px;
+  font-weight: 300;
+}
+
+.amount p {
+  margin: 50px auto 60px auto;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  /* identical to box height */
+  font-weight: bold;
+  line-height: 33px;
+  letter-spacing: 1.65px;
+}
+
+.buy-now-button {
+  position: absolute;
+  right: 0;
+  width: 175px;
+  height: 50px;
+  color: #fff;
+  background-color: #030303;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  /* identical to box height */
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 2px;
+}
+
+.buy-now-button:hover {
+  background-color: #9d8665;
+  -webkit-transition: 0.3S;
+  transition: 0.3S;
+}
+
+@media (max-width: 1024px) {
+  .buy-tickets h2 {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  .checkbox {
+    display: none;
+  }
+  .buy-options {
+    margin: 0;
+  }
+  .amount {
+    margin: 0 auto;
+  }
+  .amount h5 {
+    text-align: left;
+  }
+  .amount p {
+    margin: 25px auto 69px auto;
+  }
+  .amount span {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .buy-now-button {
+    width: 150px;
+  }
+  .buy-tickets-image img {
+    width: auto;
+    max-height: 440px;
+  }
+}
+
+@media (max-width: 768px) {
+  .buy-tickets-image img {
+    width: 100%;
+    height: auto;
+  }
+  .buy-tickets h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 420px) {
+  .buy-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .buy-tickets-image img {
+    width: 100%;
+    max-height: 160px;
+  }
+  .amount h5 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 40px auto 20px auto;
+  }
+  .amount span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .amount p {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  .buy-tickets h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.buy-now-button {
+  font-size: 16px;
+  line-height: 0px;
 }
 /*# sourceMappingURL=style.css.map */
