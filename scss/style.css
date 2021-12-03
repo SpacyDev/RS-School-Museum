@@ -361,6 +361,7 @@ header {
   font-size: 32px;
   line-height: 35px;
   letter-spacing: 5px;
+  color: #030303;
 }
 
 .main-text {
@@ -494,11 +495,6 @@ header {
   background-color: #030303;
 }
 
-.picture-explore img {
-  max-width: 720px;
-  height: auto;
-}
-
 .picture-explore .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,7 +511,6 @@ header {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #fff;
-  display: block;
   font-size: 80px;
   line-height: 90px;
   letter-spacing: 5px;
@@ -527,12 +522,10 @@ header {
   background-color: #710707;
   border: none;
   height: 3px;
-  display: block;
   margin: 25px 0 75px 0;
 }
 
 .picture-explore-container {
-  display: inline-block;
   max-width: 660px;
   margin-right: 10px;
 }
@@ -606,6 +599,123 @@ header {
 
 @media (max-width: 420px) {
   .picture-explore h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.video-journey .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 76px auto 74px auto;
+}
+
+.video-journey-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 75px;
+}
+
+.video-journey-text h1 {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9d8665;
+  margin-left: 0;
+}
+
+.video-journey-text span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  font-size: 22px;
+  line-height: 38px;
+  max-width: 50%;
+}
+
+.video-journey-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0;
+}
+
+.explore-nav {
+  text-align: center;
+  display: inline-block;
+}
+
+.explore-nav img {
+  max-width: 200px;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .video-journey .container {
+    margin: 60px auto;
+  }
+  .video-journey-text h1 {
+    font-size: 50px;
+    line-height: 75px;
+    max-width: 100%;
+  }
+  .video-journey-text span {
+    display: none;
+  }
+  .video-journey-text {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-journey-text h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .explore-vid-hidden {
+    display: none;
+  }
+  .video-journey-footer video {
+    width: 45%;
+  }
+}
+
+@media (max-width: 420px) {
+  .video-journey .container {
+    margin-top: 36px;
+  }
+  .video-journey-text {
+    margin-bottom: 20px;
+  }
+  .video-journey-text h1 {
     font-size: 28px;
     line-height: 40px;
   }

@@ -1,0 +1,105 @@
+.video-journey {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 76px auto 74px auto;
+    }
+}
+
+.video-journey-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 75px;
+
+    h1 {
+        @include Font-forum;
+        font-size: 80px;
+        line-height: 90px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $Font-gold;
+        margin-left: 0;
+    }
+
+    span {
+        @include Font-roboto22;
+        font-size: 22px;
+        line-height: 38px;
+        max-width: 50%;
+    }
+}
+
+.video-journey-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.explore-nav {
+    text-align: center;
+    display: inline-block;
+    img{
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: $lg) {
+    .video-journey {
+        .container {
+            margin: 60px auto;
+        }
+    }
+
+    .video-journey-text {
+        h1 {
+            font-size: 50px;
+            line-height: 75px;
+            max-width: 100%;
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    .video-journey-text {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: $md) {
+    .video-journey-text {
+        h1 {
+            font-size: 40px;
+            line-height: 60px;
+        }
+    }
+
+    .explore-vid-hidden {
+        display: none;
+    }
+
+    .video-journey-footer {
+        video {
+            width: 45%;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .video-journey{
+        .container{
+            margin-top: 36px;
+        }
+    }
+    .video-journey-text {
+        margin-bottom: 20px;
+        h1 {
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+}
