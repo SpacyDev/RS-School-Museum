@@ -61,6 +61,19 @@
     span {
         display: block;
     }
+
+    color: #000;
+
+    &:hover {
+        img{
+            transition: 1s;
+            transform: scale(1.05);
+        }
+        hr {
+            transition: 1s;
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: $lg) {

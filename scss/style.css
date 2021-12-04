@@ -315,6 +315,7 @@ footer {
   }
   .social-media ul {
     padding: 0;
+    gap: 0 5px;
   }
   .rolling-scopes {
     display: none;
@@ -582,6 +583,7 @@ footer {
 .card {
   display: block;
   max-width: 440px;
+  color: #000;
 }
 
 .card hr {
@@ -593,6 +595,19 @@ footer {
 
 .card span {
   display: block;
+}
+
+.card:hover img {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card:hover hr {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 100%;
 }
 
 @media (max-width: 1024px) {
