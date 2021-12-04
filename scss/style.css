@@ -315,6 +315,7 @@ footer {
   }
   .social-media ul {
     padding: 0;
+    gap: 0 5px;
   }
   .rolling-scopes {
     display: none;
