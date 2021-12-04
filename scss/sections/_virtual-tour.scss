@@ -50,6 +50,7 @@
 .card {
     display: block;
     max-width: 440px;
+    color: #000;
 
     hr {
         margin: 10px auto;
@@ -60,6 +61,16 @@
 
     span {
         display: block;
+    }
+    &:hover{
+        hr{
+            transition: 1s;
+            width: 100%;
+        }
+        img{
+            transform: scale(1.05);
+            transition: 1s;
+        }
     }
 }
 

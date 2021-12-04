@@ -582,6 +582,7 @@ footer {
 .card {
   display: block;
   max-width: 440px;
+  color: #000;
 }
 
 .card hr {
@@ -593,6 +594,19 @@ footer {
 
 .card span {
   display: block;
+}
+
+.card:hover hr {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 100%;
+}
+
+.card:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @media (max-width: 1024px) {
