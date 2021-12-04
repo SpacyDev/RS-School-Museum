@@ -1234,7 +1234,7 @@ footer {
 }
 
 .scrolling-image {
-  background: url(/img/bg-image.png) no-repeat;
+  background: url(../img/bg-image.png) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 72%;
