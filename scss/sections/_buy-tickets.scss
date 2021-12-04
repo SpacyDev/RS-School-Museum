@@ -38,7 +38,7 @@
 
 .checkbox {
     h5 {
-        
+
         @include Font-roboto28;
         line-height: 33px;
         font-weight: bold;
@@ -135,9 +135,11 @@
 
     .amount {
         margin: 0 auto;
-        h5{
+
+        h5 {
             text-align: left;
         }
+
         p {
             margin: 25px auto 69px auto;
         }
@@ -216,9 +218,17 @@
             line-height: 40px;
         }
     }
-}
 
-.buy-now-button {
-    font-size: 16px;
-    line-height: 0px;
+    .buy-now-button {
+        font-size: 16px;
+        line-height: 0px;
+    }
+}
+.scrolling-image{
+    
+    background: url(/img/bg-image.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 72%;
+    height: 400px;
 }
