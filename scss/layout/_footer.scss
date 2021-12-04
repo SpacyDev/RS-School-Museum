@@ -1,0 +1,148 @@
+footer {
+    background-color: $Bg-dark;
+}
+
+.footer-nav {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    padding: 86px 0 50px 0;
+    align-items: flex-start;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 25px 150px;
+        @include Font-roboto22;
+        font-weight: 200;
+        line-height: 26px;
+        letter-spacing: 2px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: $Font-gold;
+            transition: 0.3s;
+        }
+    }
+}
+
+.main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-media {
+    display: flex;
+    align-items: flex-end;
+    padding: 86px 0 50px 0;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0 25px;
+    }
+}
+
+.white-line {
+    width: 100%;
+    border-top: #fff 3px solid;
+}
+
+.add-info {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 52px 0;
+
+    span {
+        @include Font-roboto22;
+        font-weight: 200;
+        line-height: 22px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-nav {
+        ul {
+            gap: 25px 100px
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        margin-right: 90px;
+    }
+
+    .footer-nav {
+        width: 100%;
+
+        ul {
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+
+    .social-media {
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .main-info {
+        margin: 0;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        padding: 42px 0 40px 0;
+
+        ul {
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: space-between;
+            gap: 30px 80px;
+            padding: 0;
+            margin-top: 40px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    .social-media {
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            padding: 0;
+        }
+    }
+
+    .rolling-scopes {
+        display: none;
+    }
+
+    .add-info {
+        span {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}

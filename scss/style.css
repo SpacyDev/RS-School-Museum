@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+ul {
+  margin: 0;
+}
+
 header {
   background-color: #030303;
 }
@@ -118,6 +122,206 @@ header {
   .logo span {
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+footer {
+  background-color: #030303;
+}
+
+.footer-nav {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  padding: 86px 0 50px 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  gap: 25px 150px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  /* identical to box height */
+  font-weight: 200;
+  line-height: 26px;
+  letter-spacing: 2px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.footer-nav a {
+  color: #fff;
+}
+
+.footer-nav a:hover {
+  color: #9d8665;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 86px 0 50px 0;
+}
+
+.social-media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 25px;
+}
+
+.white-line {
+  width: 100%;
+  border-top: #fff 3px solid;
+}
+
+.add-info {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0 52px 0;
+}
+
+.add-info span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  /* identical to box height */
+  font-weight: 200;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1024px) {
+  .footer-nav ul {
+    gap: 25px 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 90px;
+  }
+  .footer-nav {
+    width: 100%;
+  }
+  .footer-nav ul {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .social-media {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-info {
+    margin: 0;
+  }
+  .footer-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 42px 0 40px 0;
+  }
+  .footer-nav ul {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 30px 80px;
+    padding: 0;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .social-media {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .social-media ul {
+    padding: 0;
+  }
+  .rolling-scopes {
+    display: none;
+  }
+  .add-info span {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
