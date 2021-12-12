@@ -12,7 +12,7 @@
     align-items: center;
     margin-bottom: 75px;
 
-    h1 {
+    h2 {
         @include Font-forum;
         font-size: 80px;
         line-height: 90px;
@@ -54,7 +54,7 @@
     }
 
     .video-journey-text {
-        h1 {
+        h2 {
             font-size: 50px;
             line-height: 75px;
             max-width: 100%;
@@ -72,7 +72,7 @@
 
 @media (max-width: $md) {
     .video-journey-text {
-        h1 {
+        h2 {
             font-size: 40px;
             line-height: 60px;
         }
@@ -97,7 +97,7 @@
     }
     .video-journey-text {
         margin-bottom: 20px;
-        h1 {
+        h2 {
             font-size: 28px;
             line-height: 40px;
         }

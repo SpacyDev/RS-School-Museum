@@ -8,7 +8,7 @@
 
     background-color: $Bg-dark;
 
-    h1 {
+    h2 {
         @include Font-forum;
         color: #fff;
         font-size: 80px;
@@ -75,7 +75,7 @@
     }
 
     .picture-explore {
-        h1 {
+        h2 {
             font-size: 50px;
             line-height: 75px;
         }
@@ -102,7 +102,7 @@
     }
 
     .picture-explore {
-        h1 {
+        h2 {
             font-size: 40px;
             line-height: 60px;
         }
@@ -112,7 +112,7 @@
 
 @media (max-width: $sm) {
     .picture-explore {
-        h1 {
+        h2 {
             font-size: 28px;
             line-height: 40px;
         }
